@@ -1,0 +1,183 @@
+:root {
+  --main-bg-color: #FEF6ED;
+  --main-nav-color: #50A5B1;
+  --primary-color: #122D51;
+  --main-button-color: #F1600D;
+  --logo-font: 'Lakki Reddy', cursive;
+}
+html {
+  scroll-behavior: smooth;
+}
+html, body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--main-bg-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+nav {
+  background-color: var(--main-nav-color)
+}
+
+.nav-item {
+  padding: 0 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+}
+.navbar-brand {
+  position: relative;
+  top: 12px;
+  margin: 0 auto;
+  color: white;
+  font-size: 40px;
+  font-family: var(--logo-font);
+}
+.nav-head,
+.items {
+  padding: 10px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1em;
+}
+.navbar-toggler {
+  position: absolute;
+  left: 25px;
+  top: 30px;
+  background-color: white;
+}
+/*END OF NAVBAR STYLES*/
+
+/* START OF FORM */
+form {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 125px 0;
+}
+form h2 {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+form .row .col {
+  padding-bottom: 12px;
+}
+form .col-12 button {
+  background-color: var(--main-button-color);
+  border: none;
+  padding: 10px 20px;
+}
+/* END OF FORM */
+
+/* START OF FOOTER */
+footer {
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 100px 0;
+}
+footer .col {
+  color: white;
+}
+footer .col h3 {
+  font-family: var(--logo-font);
+}
+footer .col h4 {
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+footer .col a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+footer .socials a {
+  padding: 0 5px;
+}
+footer .footer-links a{
+  line-height: 30px;
+}
+footer .footer-links a:hover{
+ color: var(--main-button-color);
+}
+footer .contact a{
+  font-size: 1em;
+}
+/* END OF FOOTER */
+
+
+/*======= MEDIA QUERIES ======*/
+@media (min-width: 1399px) {
+  .hero {
+    margin-top: 10%;
+  }
+  .col {
+    position: relative;
+  }
+
+  .hero button {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1251px) {
+  .items .nav-item .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-head {
+    text-align: center;
+  }
+  .navbar-brand {
+    font-size: 20px;
+    top: 17px;
+  }
+  .row {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .col {
+    margin: 20px 0;
+  }
+  form .row .col {
+    padding: 0;
+  }
+  form .g-3{
+    display: flex;
+    flex-direction: column;
+  }
+  form .g-3 .last-name {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-head .navbar-brand {
+    font-size: 25px;
+    top: 20px;
+  }
+  form {
+    padding: 50px 0;
+    max-width: 70%;
+  }
+  form .row .col {
+    padding-bottom: 5px;
+  }
+  form .form-label {
+    display: inline-block;
+    text-align: center;
+  }
+}
