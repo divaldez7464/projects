@@ -1,0 +1,2 @@
+- Uses HTTP Requests (GET,POST), along with URLSs, endpoints
+- REST APIs resources and url parameters to recieve data and use queries to modify
